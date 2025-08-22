@@ -1,0 +1,233 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f1f1f1;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+header {
+  background: #0077b6;
+  color: whit#f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav a {
+  color: #90e0ef;
+  text-decoration: none;
+  font-weight: bold;
+  color: #f1f1f1;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+   background: #90e0ef;
+  color: #0077b6;
+}
+
+section {
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  
+ 
+}
+
+th, td {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: left;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #000000ce;
+  background: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px 8px 0 0;
+}
+h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+h2 li {
+  list-style: none;
+  font-size: 22px;
+  font-weight: bold;
+  color: #000000;
+}
+
+section ul {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+section p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+#programas, #Atencion, #comunicacion, #calidad, #presencia {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+.bloque {
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.img-01 {
+  width: 100px;       /* tamaño del logo */
+  position: fixed;    /* se pega a la pantalla */
+  bottom: 10px;       /* distancia desde abajo */
+  right: 20px;        /* distancia desde la derecha */
+  z-index: 50;       /* para que quede por encima */
+  height: 250;
+}
+ section:nth-child(even) {
+  background: #f8f9fa;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th {
+  background: #0077b6;
+  color: #f1f1f1;
+  padding: 12px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+tr:hover {
+  background: #f1f1f1;
+}
+
+
+
+/*Ajustes para celulares */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .img-01 {
+    width: 70px;   /* logo más pequeño en celular */
+    height: auto;
+    bottom: 5px;
+    right: 10px;
+  }
+
+  body {
+    margin: 10px; /* menos margen en pantallas pequeñas */
+  }
+}
+
+.icono {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.icono2{
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  
+}
+
+.icono3{
+  flex: 1; 
+  width: 150px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icono4{
+   width: 80px;
+  height: auto;  
+  right: 20px;
+  align-items: center;
+}
+/* Ajustes para celulares */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .img-01 {
+    width: 70px;
+    height: auto;
+    bottom: 5px;
+    right: 10px;
+  }
+
+  body {
+    margin: 10px;
+  }
+
+  /* 👇 FIX para el icono del header en móvil */
+  .icono {
+    position: static;   /* deja de ser absolute */
+    display: block;
+    margin: 15px auto 0; /* se centra debajo del título */
+    width: 70px;        /* más pequeño en celular */
+  }
+}
